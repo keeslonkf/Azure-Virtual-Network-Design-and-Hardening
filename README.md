@@ -94,14 +94,14 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the playbook file to Ansible Control Node.
-$ mkdir /etc/ansible/roles
-$ curl https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/gt-virt-cyber-pt-11-2021-u-lol/-/blob/master/13-Elk-Stack-Project/Activities/Stu_Day_2/Unsolved/Resources/filebeat-playbook.yml > /etc/ansible/roles/filebeat-playbook.yml
-$ cp /etc/ansible/roles/filebeat-playbook.yml /etc/ansible/roles/metricbeat-playbook.yml
+- $ mkdir /etc/ansible/roles
+- $ curl https://gt.bootcampcontent.com/GT-Coding-Boot-Camp/gt-virt-cyber-pt-11-2021-u-lol/-/blob/master/13-Elk-Stack-Project/Activities/Stu_Day_2/Unsolved/Resources/filebeat-playbook.yml > /etc/ansible/roles/filebeat-playbook.yml
+- $ cp /etc/ansible/roles/filebeat-playbook.yml /etc/ansible/roles/metricbeat-playbook.yml
 
 - Update the "hosts" file to include the group "elk" and the Elk server IP address and the group "webservers" and the Web-VM IP addresses.
 
-$ cd /etc/ansible
-$ nano hosts
+- $ cd /etc/ansible
+- $ nano hosts
  [webservers]
  10.0.0.5 ansible_python_interpreter=/usr/bin/python3
  10.0.0.6 ansible_python_interpreter=/usr/bin/python3
@@ -113,5 +113,5 @@ $ nano hosts
 - Run the playbook, and navigate to http://52.184.155.0:5601/ to check that the installation worked as expected.
 - ![elkDashboard_snapshot.jpg](https://github.com/keeslonkf/GTCS_Project1/blob/0090daeb4a583945eae5e5f7b09a3e356b7bf39f/Images/elkDashboard_snapshot.JPG)
 
-$ ansible-playbook filebeat-playbook.yml
-$ ansible-playbook metricbeat-playbook.yml
+- $ ansible-playbook filebeat-playbook.yml
+- $ ansible-playbook metricbeat-playbook.yml
