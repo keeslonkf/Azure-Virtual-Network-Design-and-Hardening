@@ -75,13 +75,13 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- 10.0.0.5
-- 10.0.0.6
-- 10.0.0.7
+- Web-1 10.0.0.7
+- Web-2 10.0.0.6
+- Web-3 10.0.0.5
 
 We have installed the following Beats on these machines:
-- File-beats
-- Metric-beats
+- File-beat
+- Metric-beat
 
 These Beats allow us to collect the following information from each machine:
 
@@ -111,6 +111,7 @@ $ nano hosts
  10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbook, and navigate to http://52.184.155.0:5601/ to check that the installation worked as expected.
+- ![elkDashboard_snapshot.jpg](https://github.com/keeslonkf/GTCS_Project1/blob/0090daeb4a583945eae5e5f7b09a3e356b7bf39f/Images/elkDashboard_snapshot.JPG)
 
 $ ansible-playbook filebeat-playbook.yml
 $ ansible-playbook metricbeat-playbook.yml
