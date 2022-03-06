@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Red_Team Network Diagram](https://github.com/keeslonkf/GTCS_Project1/blob/07daa225915a25278b3296d9609a63f8e1f1b3ed/Diagrams/Project1_networkDiagram.png)
+![Red_Team Network Diagram]()
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
