@@ -45,7 +45,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump-box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- The public IP Address of my Local Machine. For security purposes this IP Address will not be disclosed.
+- The public IP Address of my Local Machine (87.117.204.79). For security purposes this IP Address was randomly generated for this document. 
 
 Machines within the network can only be accessed by the Jump-box ( 10.0.0.4) as it acts as a gateway to the network. In addition, The Jump-Box has access to the ELK VM server.
 
@@ -53,7 +53,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | ***Not disclosed     |
+| Jump Box | Yes                 | 87.117.204.79        |
 | Web-1    | No                  | 10.0.0.4             |
 | Web-2    | No                  | 10.0.0.4             |
 | Web-3    | No                  | 10.0.0.4             |
