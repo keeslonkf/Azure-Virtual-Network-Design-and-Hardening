@@ -28,7 +28,7 @@ A Jump-Box is a secure machine that is the primary source of administration for 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 - Filebeat collects log data, specifically about the file system 
-- Metric-beat records metrics from the operating system and services such as CPU usage and uptime.
+- Metricbeat records metrics from the operating system and services such as CPU usage and uptime.
 
 The configuration details of each machine may be found below.
 
