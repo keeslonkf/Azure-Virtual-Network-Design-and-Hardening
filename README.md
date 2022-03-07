@@ -115,6 +115,9 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to http://52.184.155.0:5601/ to check that the installation worked as expected.
 - $ ansible-playbook filebeat-playbook.yml
 - $ ansible-playbook metricbeat-playbook.yml
+- The Kibana dashboard is featured below
 ![elkDashboard_snapshot.jpg](https://github.com/keeslonkf/GTCS_Project1/blob/0090daeb4a583945eae5e5f7b09a3e356b7bf39f/Images/elkDashboard_snapshot.JPG)
+- The Filebeat dashboard is featured below
 ![kibana_verifyFilebeat3.JPG](https://github.com/keeslonkf/GTCS_Project1/blob/45af183b5ce93e979484965474421c338fbe050f/Images/kibana_verifyFilebeat3.JPG)
+- The Metricbeat dashboard is featured below
 ![kibana_verifyMetricbeat2.JPG](https://github.com/keeslonkf/GTCS_Project1/blob/c6a0a32a8686003ef4f6799736c856024ba6649c/Images/kibana_verifyMetricbeat2.JPG)
