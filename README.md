@@ -22,7 +22,7 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly Available, in addition to restricting access to the network. Load balancers work by distributing network traffic across multiple redundant servers so resources can always be accessed by clients. Load balancers typically provide added functionality to combat loss of availability with health probes. These health probes check to make sure each server is functioning properly and able to provide its resources to clients. When a faulty server is discovered, network traffic is rerouted to only the "healthy" servers. Because of its position between the client and server it provides another barrier that acts essentially as another layer of security. Load balancing rules can be used in conjunction with a network security group to further harden the system.
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network. Load balancers work by distributing network traffic across multiple redundant servers so resources can always be accessed by clients. Load balancers typically provide added functionality to combat loss of availability with health probes. These health probes check to make sure each server is functioning properly and able to provide its resources to clients. When a faulty server is discovered, network traffic is rerouted to only the "healthy" servers. Because of its position between the client and server it provides another barrier that acts essentially as another layer of security. Load balancing rules can be used in conjunction with a network security group to further harden the system.
 
 A Jump-Box is a secure machine that is the primary source of administration for machines on a network. It also serves the function of a gateway into a remote network. This is advantageous because in order to connect to the network, a user must authenticate at one focal point - the Jump-Box.Using this "fanning in" topology significantly reduces exposure to the internet which in turn reduces a network's attack surface. 
 
@@ -32,20 +32,21 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name     | Function   | IP Address | Operating System |
-|----------|------------|------------|------------------|
-| Jump Box | Gateway    | 10.0.0.4   | Linux            |
-| Web-1    | DVWA Server| 10.0.0.7   | Linux            |
-| Web-2    | DVWA Server| 10.0.0.6   | Linux            |
-| Web-3    | DVWA Server| 10.0.0.5   | Linux            |
-| ELK      | Monitoring | 10.1.0.4   | Linux            |
+| Name     | Function    | IP Address               | Operating System |
+|----------|-------------|--------------------------|------------------|
+| Jump Box | Gateway     | 10.0.0.4 / 40.88.130.233 | Linux            |
+| Web-1    | DVWA Server | 10.0.0.7                 | Linux            |
+| Web-2    | DVWA Server | 10.0.0.6                 | Linux            |
+| Web-3    | DVWA Server | 10.0.0.5                 | Linux            |
+| ELK      | Monitoring  | 10.1.0.4 / 52.184.155.0  | Linux            |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump-box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- The public IP Address of my Local Machine (87.117.204.79). For security purposes this IP Address was randomly generated for this document. 
+Only the Jump-box machine can accept connections from the Internet. Access to this machine is only allowed from:
+- The public IP Address of my Local Machine (87.117.204.79). 
+- For security purposes this IP Address was randomly generated for this document. 
 
 Machines within the network can only be accessed by the Jump-box ( 10.0.0.4) as it acts as a gateway to the network. In addition, The Jump-Box has access to the ELK VM server.
 
