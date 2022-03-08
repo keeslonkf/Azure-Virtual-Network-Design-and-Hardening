@@ -61,7 +61,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows us to easily scale if we want to configure multiple machines at once. This saves us a lot of time and helps maintain uniformity and reduce potential human errors in configuring multiple machines manually. It also allows us to easily destroy and rebuild the same machine in the event that a breach has occurred at the touch of a few keystrokes. This is the power of Infrastructure As Code (IaC) and Infrastructure as a Service (IaS) which makes cloud services an appealing Info-tech model.
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it allows us to easily scale if we want to configure multiple machines at once. This saves us a lot of time and helps maintain uniformity and reduce potential human errors in configuring multiple machines manually. It also allows us to easily destroy and rebuild the same machine in the event that a breach has occurred at the touch of a few keystrokes. This is the power of Infrastructure As Code (IaC) which makes cloud services an appealing Info-tech model.
 
 The playbook implements the following tasks:
 - Installs Docker, Python3 and docker pip package in that order
